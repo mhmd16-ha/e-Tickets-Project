@@ -1,9 +1,10 @@
-﻿using System.Collections.Generic;
+﻿using e_Tickets.Data.Base;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace e_Tickets.Models
 {
-    public class Cinema
+    public class Cinema :IEntityBase
     {
         [Key]
         public int Id { get; set; }

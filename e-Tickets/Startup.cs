@@ -30,6 +30,10 @@ namespace e_Tickets
             services.AddDbContext<AppDbContext>(options=>options.UseSqlServer(Configuration.GetConnectionString("DefaultConnectionStrings")));
             services.AddControllersWithViews();
             services.AddScoped<IActorService, ActorService>();
+            services.AddScoped<ICinemaService, CinemaService>();
+            services.AddScoped<IProducerService, ProducerService>();
+
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
