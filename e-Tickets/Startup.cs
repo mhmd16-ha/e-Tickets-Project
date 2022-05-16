@@ -32,6 +32,8 @@ namespace e_Tickets
             services.AddScoped<IActorService, ActorService>();
             services.AddScoped<ICinemaService, CinemaService>();
             services.AddScoped<IProducerService, ProducerService>();
+            services.AddScoped<IMovieService, MovieService>();
+
 
 
         }

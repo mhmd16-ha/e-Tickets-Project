@@ -1,4 +1,5 @@
 ﻿using e_Tickets.Data;
+using e_Tickets.Data.Base;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -6,7 +7,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace e_Tickets.Models
 {
-    public class Movie
+    public class Movie:IEntityBase
     {
         [Key]
         public int Id { get; set; }
